@@ -22,13 +22,42 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About</h2>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+          <p>
+            Based 30 minutes outside Oslo, Norway, Cherry Lane first opened our
+            doors in 2019 with the vision to come up with a cost efficient and
+            sustainable solution for people in need of beautiful garments for
+            only a short time frame. It just seemed crazy to buy a dress that
+            can only be worn once and is absolutely not environmentally friendly
+            either!
+          </p>
+          <p>
+            We are happy to service ALL of Norway with longer rental periods but
+            can also offer discounts with our chosen Photography Studio vendors.
+            In supporting these local businesses we really work towards reducing
+            our carbon footprint meaning garments can be available upon the day
+            of use with no retrieval, returning or cleaning required. 
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="gallery"
+          className={`${this.props.article === 'gallery' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Gallery</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
@@ -56,13 +85,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="rates"
+          className={`${this.props.article === 'rates' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Rental Rates</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -80,29 +109,6 @@ class Main extends React.Component {
             Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
             libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
             tempus.
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
           </p>
           {close}
         </article>
@@ -138,7 +144,7 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li>
+            {/* <li>
               <a
                 href="https://twitter.com/HuntaroSan"
                 className="icon fa-twitter"
@@ -150,18 +156,13 @@ class Main extends React.Component {
               <a href="https://codebushi.com" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
+                href="https://www.instagram.com/cherrylanenorge/"
+                className="icon fa-instagram"
               >
-                <span className="label">GitHub</span>
+                <span className="label">Instagram</span>
               </a>
             </li>
           </ul>

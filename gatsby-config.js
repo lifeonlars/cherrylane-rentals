@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: 'Cherry Lane Rentals - Luxury Maternity rentals for less',
+    author: 'Lars Farstad',
+    description:
+      'Cherry Lane offers stunning and sustainable photographic rental services in a simple and affordable way.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +20,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
