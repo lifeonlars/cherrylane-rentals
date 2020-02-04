@@ -29,9 +29,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
+
           <p>
             Based 30 minutes outside Oslo, Norway, Cherry Lane first opened our
             doors in 2019 with the vision to come up with a cost efficient and
@@ -61,25 +59,11 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
+          <h3>Coming soon!</h3>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Product photographs are in progress for all our dresses and will be
+            added soon. You're welcome to request a PDF catalogue or arrange a
+            time to view the dresses in person.
           </p>
           {close}
         </article>
@@ -92,24 +76,30 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Rental Rates</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Items can be tried on and picked up at a pre-agreed time from Cherry
+            Lange then returned by the same time following the rental period
+            chosen (e.g. within a 24 hour period, 5 days or 2 weeks).
+            Alternatively service can be booked with our preferred photographers
+            to be available from the studio on your photo day to save on your
+            travel costs to and from Cherry Lane.
           </p>
+
+          <h3>24 Hour Hire</h3>
+          <h5>kr 500</h5>
+          <hr />
+          <h3>5 Day Hire</h3>
+          <h5>kr 650</h5>
+          <hr />
+          <h3>2 Week Hire</h3>
+          <h5>kr 1000</h5>
+          <hr />
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Bond is the RRP which is simply refunded less rental fees etc when
+            garment is returned, easy! PLUS Cleaning is included in rental fee.
           </p>
+
+          <p>Contact us to Book pickup time</p>
           {close}
         </article>
 
@@ -121,7 +111,18 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+
+          <p>
+            Contact us via phone (46675248) or email at{' '}
+            <a href="mailto:cherrylanenorge@gmail.com">
+              cherrylanenorge@gmail.com
+            </a>{' '}
+            to arrange a time to view, try on or pick-up a dress.{' '}
+          </p>
+
+          <p>We are located in Kløfta, Ullensaker in Norway.</p>
+
+          {/* <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -142,7 +143,7 @@ class Main extends React.Component {
                 <input type="reset" value="Reset" />
               </li>
             </ul>
-          </form>
+          </form> */}
           <ul className="icons">
             {/* <li>
               <a
@@ -152,17 +153,32 @@ class Main extends React.Component {
                 <span className="label">Twitter</span>
               </a>
             </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li> */}
+            */}
             <li>
               <a
-                href="https://www.instagram.com/cherrylanenorge/"
+                href="https://www.facebook.com/CherryLaneNorge/"
+                className="icon fa-facebook"
+                target="_blank"
+              >
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/cherrylanerentals/"
                 className="icon fa-instagram"
+                target="_blank"
               >
                 <span className="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:cherrylanenorge@gmail.com"
+                className="icon fa-envelope"
+                target="_blank"
+              >
+                <span className="label">Email</span>
               </a>
             </li>
           </ul>
